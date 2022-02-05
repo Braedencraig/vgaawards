@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Video Game Accessibility Awards</title>
+    <meta name="description" content="Video Game Accessibility Awards" />
+    <meta property="og:title" content="Video Game Accessibility Awards" />
+    <meta property="og:description" content="Video Game Accessibility Awards" />
+    <meta property="og:url" content="http://vgaawards.com//" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="http://vgaawards.com//logo.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="500" />
+    <meta property="og:image:height" content="500" />
+    <meta name="twitter:title" content="Video Game Accessibility Awards" />
+    <meta
+      name="twitter:description"
+      content="Video Game Accessibility Awards"
+    />
+    <meta name="twitter:image" content="http://vgaawards.com//logo.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style>
+      html {
+        box-sizing: border-box;
+      }
+
+      *,
+      *:before,
+      *:after {
+        box-sizing: inherit;
+      }
+
+      @font-face {
+        font-family: CharoeMed;
+        src: url("./Charoe-Medium.otf") format("opentype");
+      }
+
+      @font-face {
+        font-family: CharoeBold;
+        font-weight: bold;
+        src: url("./Charoe-Bold.otf") format("opentype");
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        font-size: 24px;
+        background: black;
+      }
+
+      h1 {
+        display: none;
+      }
+
+      h2 {
+        color: white;
+        font-family: CharoeBold;
+        animation: example 1s infinite;
+        text-align: center;
+        margin: 0 auto;
+        width: 50%;
+      }
+
+      h3 {
+        color: white;
+        font-family: "Press Start 2P", cursive;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        height: 90px;
+        color: white;
+        width: 100%;
+        text-align: center;
+        margin: auto;
+        font-size: 40px;
+        line-height: 40px;
+        letter-spacing: 5px;
+        text-shadow: -2px 0 0 #fdff2a, -4px 0 0 #df4a42, 2px 0 0 #91fcfe,
+          4px 0 0 #4405fc;
+        animation: blink 1s steps(4, start) infinite;
+        margin: 0 auto;
+        width: 50%;
+        margin-top: 20px;
+        margin-bottom: 40px;
+      }
+
+      .logo {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+      }
+
+      .logo img {
+        width: 100%;
+        height: auto;
+        max-width: 800px;
+      }
+
+      .container {
+        animation: fadein 2s;
+        -moz-animation: fadein 2s;
+        /* Firefox */
+        -webkit-animation: fadein 2s;
+        /* Safari and Chrome */
+        -o-animation: fadein 2s;
+      }
+
+      @keyframes fadein {
+        from {
+          opacity: 0;
+        }
+
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes blink {
+        to {
+          visibility: hidden;
+        }
+      }
+
+      @-moz-keyframes fadein {
+        /* Firefox */
+        from {
+          opacity: 0;
+        }
+
+        to {
+          opacity: 1;
+        }
+      }
+
+      @-webkit-keyframes fadein {
+        /* Safari and Chrome */
+        from {
+          opacity: 0;
+        }
+
+        to {
+          opacity: 1;
+        }
+      }
+
+      @-o-keyframes fadein {
+        /* Opera */
+        from {
+          opacity: 0;
+        }
+
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes example {
+        0% {
+          color: #f4d35f;
+          text-shadow: 0 0 20px #ff5769;
+        }
+        25% {
+          color: #ff5769;
+          text-shadow: 2px 2px 2px #f4d35f;
+          transform: translate(-2px, 1px);
+        }
+        40% {
+          color: #f4d35f;
+          text-shadow: none;
+          transform: translate(0, 0);
+        }
+        50% {
+          color: #ff5769;
+          text-shadow: 5px 5px 2px blue, -5px -5px 2px red;
+          transform: translate(0px, 5px);
+        }
+        70% {
+          color: #f4d35f;
+          text-shadow: none;
+          transform: translate(0, 0);
+        }
+        80% {
+          color: #f4d35f;
+          text-shadow: 0 0 20px #ff5769;
+          transform: translate(-2px, 1px);
+        }
+        100% {
+          color: #f4d35f;
+          text-shadow: none;
+        }
+      }
+
+      .socials {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+
+      .socials i {
+        font-size: 70px;
+        margin: 10px;
+        color: white;
+        transition: all 0.4s;
+        margin-bottom: 30px;
+      }
+
+      .socials i:hover {
+        color: #ff5769;
+      }
+
+      .additional-details {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+      }
+
+      .additional-details img {
+        max-width: 300px;
+      }
+
+      @media only screen and (max-width: 1300px) {
+        h2, h3 {
+          width: 70%;
+        }
+      }
+
+      @media only screen and (max-width: 900px) {
+        h2, h3 {
+          width: 90%;
+          font-size: 20px;
+        }
+
+        .socials i {
+          font-size: 40px;
+        }
+
+        .additional-details img {
+          max-width: 200px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="logo">
+        <img src="./logo.png" alt="Video Game Accessibility Awards" />
+      </div>
+      <div class="socials">
+        <a
+          href="https://www.instagram.com/vgaawards/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fab fa-instagram fa-2x"></i>
+        </a>
+        <a
+          href="https://twitter.com/vgaawards?lang=en"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fab fa-twitter fa-2x"></i>
+        </a>
+      </div>
+      <h1>Video Game Accessibility Awards</h1>
+      <h2>Livestream on March 12, 2022</h2>
+      <h3>Livestream on March 12, 2022</h3>
+    </div>
+    <div class="additional-details">
+      <a href="https://www.realgoodtouring.com/" target="_blank" class="rgt"
+        ><img src="rgt.png" alt="Real Good Touring"
+      /></a>
+    </div>
+  </body>
+</html>
